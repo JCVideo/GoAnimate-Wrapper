@@ -261,7 +261,7 @@ module.exports = (voiceName, text) => {
 				req.end(
 					`<speakExtended key='666'><voice>${voice.arg}</voice><text>${text}</text><audioFormat>mp3</audioFormat></speakExtended>`
 				);
-				break;
+				break, return;
 			}
 		}
 	});
